@@ -1,0 +1,29 @@
+.mainContainerAbout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16%;
+}
+
+.titleAbout{
+    padding: 5%;
+}
+
+.descriptionAbout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    font-size:13px;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-weight: 400;
+    font-size:small;
+    font-style: normal;
+    line-height: 25px;
+}
+
+/* .textAbout{
+    
+} */
