@@ -1,0 +1,31 @@
+.mainHeaderContainer {
+    width: 100%;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .containerHeaderList {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .headerList {
+    border: solid 2px white;
+    margin: 0 15px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+  }
+  
+  .headerList:hover {
+    color: black ;
+  }
+  

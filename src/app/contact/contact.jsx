@@ -1,64 +1,72 @@
 "use client"; // This is a client component 👈🏽
+import { useState } from "react";
 import styles from "./contact.module.css";
 
 export const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [emailSent, setEmailSent] = useState("");
 
-  const validateForm = () => {
-    const newErrors = {};
-    const formElements = form.current.elements;
-
-    if (!formElements.user_name.value.trim()) {
-      newErrors.user_name = 'El nombre es requerido';
-    }
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(formElements.user_email.value.trim())) {
-      newErrors.user_email = 'El correo electrónico es requerido';
-    }
-
-    if (!formElements.message.value.trim()) {
-      newErrors.message = 'El mensaje es requerido';
-    }
-
-    return newErrors;
-  };
-
-  const sendEmail = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-
-    const validationErrors = validateForm();
-    if (Object.keys(validationErrors).length > 0) {
-      setErrors(validationErrors);
-      return;
-    }
-  }
-
+    console.log({ name, email, message }); // simulacion del envio
+    setEmailSent("Mensaje Enviado!");
+    //Limpiar los campos despues de 3 seg.
+    setTimeout(() => {
+      setName("");
+      setEmail("");
+      setMessage("");
+    }, 3000);
+  };
 
   return (
     <div className={styles.mainContainerForm}>
       <div id="contact" className={styles.contactTitleContainer}>
         <div className={styles.contactTitle}>Contacto</div>
       </div>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className={styles.containerContact}>
-          <label className={styles.labelForm}>Nombre:</label>
-          <input className={styles.inputForm} type="text" id="name" name="user_name" required />
-          {/* {errors.user_name && <div className={styles.errorForm}></div>} */}
-
-          <label className={styles.labelForm}>Email:</label>
-          <input className={styles.inputForm} type="text" id="email" name="user_email" required />
-        {/*   {errors.user_email && <div className={styles.errorForm}></div>} */}
-
-          <label className={styles.labelForm}>Mensaje:</label>
-          <textarea className={styles.textareaForm} name="message" id="msg"></textarea>
-          {/* {errors.message && <div className={styles.errorForm}></div>} */}
-        </div>
-        <div className={styles.btnContactContainer}>
-          <input className={styles.inputForm}
-            type="submit"
-            value={ 'El mensaje se envio correctamente' }
+          <label htmlFor="name">Nombre:</label>
+          <input
+            type="text"
+            id="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
           />
+
+          <label htmlFor="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+
+          <label htmlFor="message">Mensaje:</label>
+          <textarea
+            className={styles.textareaForm}
+            id="message"
+            rows="5"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          ></textarea>
+        </div>
+        <div className={styles.btnFormContainer}>
+         <button className={styles.btnForm} type="submit">
+            Enviar
+          </button>
         </div>
       </form>
+      {
+            emailSent && (
+              <div className="successMessage">
+                <p>{emailSent} </p>
+              </div>
+            )
+          }
     </div>
   );
 };

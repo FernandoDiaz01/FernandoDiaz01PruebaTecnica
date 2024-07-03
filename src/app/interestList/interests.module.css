@@ -37,5 +37,6 @@
 
 .itemInterest:hover {
     transform: rotate(5deg);
+    background-color: rgb(62, 17, 168);
    
 }
