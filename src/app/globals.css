@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Jersey+10+Charted&display=swap');
+/* Fuente para el proyecto */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  background-color: rgb(227, 199, 254);
-  font-family: "DM Mono", monospace;
+  background-color: rgb(96, 28, 255);
+  font-family: 'Dancing Script', cursive;
+  color: white;
 }
 

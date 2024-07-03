@@ -1,32 +1,18 @@
-import Image from 'next/image';
-import styles from './Page.module.css'
-import fotoPortfolio from '../../public/FotoPortfolio.png'
+
+/* import styles from './Page.module.css'; */
+import HomePage from './home/HomePage';
 import About from './about/About';
+import Interests from './interestList/Interests';
+import { Contact } from './contact/Contact';
 
 
 export default function Home() {
   return (
     <>
-    <div className={styles.mainContainer}>
-    <div className={styles.imgContainer}>
-       <Image className={styles.imgPresentation} src={fotoPortfolio} alt='Foto de perfil' />
-      </div>
-    
-   
-      <div className={styles.presentation}>
-
-          <h1 className={styles.titlePresentation} data-text="Fernando Diaz">
-            Fernando Diaz
-          </h1>
-       
-        <h3 className={styles.subtitlePresentation} data-text="Desarrollador FrontEnd">
-         Desarrollador FrontEnd
-        </h3>
-      </div>
-      
-      </div>
-      <About/>
-
+   <HomePage />
+   <About />
+   <Interests />
+   <Contact/>
     </>
 
  

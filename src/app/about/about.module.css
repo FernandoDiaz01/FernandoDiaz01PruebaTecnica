@@ -1,13 +1,17 @@
+
 .mainContainerAbout{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
     margin-top: 16%;
+    margin-bottom: 5%;
 }
 
 .titleAbout{
     padding: 5%;
+    font-size: 60px;
 }
 
 .descriptionAbout{
@@ -15,15 +19,18 @@
     align-items: center;
     justify-content: center;
     width: 50%;
-    font-size:13px;
-    font-family: 'Dancing Script', cursive;
-    color: white;
-    font-weight: 400;
-    font-size:small;
-    font-style: normal;
-    line-height: 25px;
 }
 
-/* .textAbout{
-    
-} */
+.containerTitleAbout{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.textAbout{
+    font-family: 'Dancing Script', cursive;
+    font-size:small;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 40px;
+}
