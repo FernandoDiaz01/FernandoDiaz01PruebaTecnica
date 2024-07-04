@@ -6,7 +6,7 @@ export const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [emailSent, setEmailSent] = useState("");
+  const [emailSent, setEmailSent] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -17,7 +17,9 @@ export const Contact = () => {
       setName("");
       setEmail("");
       setMessage("");
+      setEmailSent(false);  
     }, 3000);
+    
   };
 
   return (
@@ -55,18 +57,15 @@ export const Contact = () => {
           ></textarea>
         </div>
         <div className={styles.btnFormContainer}>
-         <button className={styles.btnForm} type="submit">
-            Enviar
+         <button 
+         className={styles.btnForm} type="submit"
+         style={{backgroundColor: emailSent ? "green" : "blue"}}
+         >
+          {emailSent ? "Enviado con éxito!" :  "Enviar"}
           </button>
         </div>
       </form>
-      {
-            emailSent && (
-              <div className="successMessage">
-                <p>{emailSent} </p>
-              </div>
-            )
-          }
+    
     </div>
   );
 };

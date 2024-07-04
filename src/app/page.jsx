@@ -1,6 +1,6 @@
 
 /* import styles from './Page.module.css'; */
-import HomePage from './home/HomePage';
+import Presentation from './presentation/Presentation';
 import About from './about/About';
 import Interests from './interestList/Interests';
 import { Contact } from './contact/contact';
@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
     <Header/>
-   <HomePage />
+   <Presentation />
    <About />
    <Interests />
    <Contact/>

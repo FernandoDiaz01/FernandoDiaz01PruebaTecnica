@@ -1,5 +1,5 @@
-
-.mainContainerAbout{
+/* Base Styles */
+.mainContainerAbout {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -7,30 +7,118 @@
     width: 100%;
     margin-top: 16%;
     margin-bottom: 5%;
-}
-
-.titleAbout{
+  }
+  
+  .titleAbout {
     padding: 5%;
     font-size: 60px;
-}
-
-.descriptionAbout{
+  }
+  
+  .imgAbout {
+    color: red;
+  }
+  
+  .descriptionAbout {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%;
-}
-
-.containerTitleAbout{
-  width: 30%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-.textAbout{
+  }
+  
+  .containerTitleAbout {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .textAbout {
     font-family: 'Dancing Script', cursive;
-    font-size:small;
     font-style: normal;
     font-size: 17px;
     line-height: 40px;
-}
+  }
+  
+  /* Desktop Styles */
+  @media (min-width: 993px) {
+    .mainContainerAbout {
+      flex-direction: row;
+      margin-top: 16%;
+      margin-bottom: 5%;
+    }
+  
+    .titleAbout {
+      font-size: 60px;
+    }
+  
+    .descriptionAbout {
+      width: 50%;
+    }
+  
+    .containerTitleAbout {
+      width: 30%;
+    }
+  
+    .textAbout {
+      font-size: 17px;
+    }
+  }
+  
+  /* Tablet Styles */
+  @media (min-width: 577px) and (max-width: 992px) {
+    .mainContainerAbout {
+      flex-direction: column;
+      margin-top: 10%;
+      margin-bottom: 5%;
+    }
+  
+    .titleAbout {
+      font-size: 50px;
+      text-align: center;
+    }
+  
+    .descriptionAbout {
+      width: 80%;
+      margin-top: 20px;
+    }
+  
+    .containerTitleAbout {
+      width: 80%;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+  
+    .textAbout {
+      font-size: 15px;
+    }
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 576px) {
+    .mainContainerAbout {
+      flex-direction: column;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+  
+    .titleAbout {
+      font-size: 40px;
+      text-align: center;
+    }
+  
+    .descriptionAbout {
+      width: 90%;
+      margin-top: 20px;
+    }
+  
+    .containerTitleAbout {
+      width: 90%;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+  
+    .textAbout {
+      font-size: 14px;
+    }
+  }
+  

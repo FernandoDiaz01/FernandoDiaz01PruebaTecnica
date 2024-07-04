@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import styles from './about.module.css'
-import imgAbout from './imgAbout/imgAboutMe.png'
+import img from './imgAbout/imgAboutMe.png'
 export default function About() {
   return (
     <div className={styles.mainContainerAbout}>
       <div className={styles.containerTitleAbout}>
        
-        <Image src={imgAbout} alt='fondoAbout' width={300} height={300}/>
+        <Image className={styles.imgAbout} src={img} alt='fondoAbout' width={400} height={400}/>
       </div>
       <div className={styles.descriptionAbout}>
       <p className={styles.textAbout}>
