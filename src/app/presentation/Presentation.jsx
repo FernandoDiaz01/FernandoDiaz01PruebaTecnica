@@ -1,7 +1,7 @@
 "use client";
 import Image from 'next/image';
 import styles from './presentation.module.css'
-import fotoPortfolio from './imgHome/FotoPortfolio.png'
+import fotoPortfolio from './imgPresentation/FotoPortfolio.png'
 import { motion } from 'framer-motion';
 
 
@@ -9,7 +9,7 @@ import { motion } from 'framer-motion';
 export default function Presentation() {
   return (
     <>
-  <motion.div  
+  <motion.div 
     initial={{ scale: 0 }}
           animate={{ scale: 1, color: "#fff" }}
           transition={{ duration: 1 }}>
@@ -36,7 +36,6 @@ export default function Presentation() {
       
       </div>
     
-
     </motion.div>
     </>
  

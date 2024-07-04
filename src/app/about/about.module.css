@@ -1,4 +1,4 @@
-/* Base Styles */
+
 .mainContainerAbout {
     display: flex;
     align-items: center;
@@ -39,7 +39,7 @@
     line-height: 40px;
   }
   
-  /* Desktop Styles */
+  /* Estilos escritorio  */
   @media (min-width: 993px) {
     .mainContainerAbout {
       flex-direction: row;
@@ -64,7 +64,7 @@
     }
   }
   
-  /* Tablet Styles */
+  /* estilos tablet */
   @media (min-width: 577px) and (max-width: 992px) {
     .mainContainerAbout {
       flex-direction: column;
@@ -93,7 +93,7 @@
     }
   }
   
-  /* Mobile Styles */
+  /* estilos mobile */
   @media (max-width: 576px) {
     .mainContainerAbout {
       flex-direction: column;

@@ -11,6 +11,7 @@
   font-size: 45px;
   text-align: center;
   color: #fff;
+  font-weight: 600;
 }
 
 .containerContact {
@@ -65,8 +66,10 @@
   width: 50%;
   font-size: 18px;
   transition: all 0.3 ease-in-out;
+  transform: scale(1.1);
 }
 
 .btnForm:hover {
   background: #218838;
+  transform: scale(1.1);
 }

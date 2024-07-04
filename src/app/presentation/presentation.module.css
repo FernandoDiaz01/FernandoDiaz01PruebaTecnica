@@ -1,4 +1,4 @@
-/* Base Styles */
+
 .mainContainer {
   display: flex;
   justify-content: center;
@@ -37,7 +37,7 @@
   border-radius: 50%; 
 }
 
-/* Tablet Styles */
+
 @media (max-width: 992px) {
   .mainContainer {
     flex-direction: column;
@@ -61,7 +61,6 @@
   }
 }
 
-/* Mobile Styles */
 @media (max-width: 576px) {
   .mainContainer {
     flex-direction: column;

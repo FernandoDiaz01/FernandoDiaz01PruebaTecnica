@@ -24,7 +24,7 @@ export const Contact = () => {
 
   return (
     <div className={styles.mainContainerForm}>
-      <div id="contact" className={styles.contactTitleContainer}>
+      <div  className={styles.contactTitleContainer}>
         <div className={styles.contactTitle}>Contacto</div>
       </div>
       <form onSubmit={handleSubmit}>

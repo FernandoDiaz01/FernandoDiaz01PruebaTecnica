@@ -26,7 +26,7 @@
   
   .itemInterest {
     color: white;
-    background-color: rgb(95, 28, 252);
+  
     border: 3px solid #ccc;
     border-radius: 15%;
     padding: 13px;
@@ -37,6 +37,6 @@
 
 .itemInterest:hover {
     transform: rotate(5deg);
-    background-color: rgb(62, 17, 168);
+
    
 }

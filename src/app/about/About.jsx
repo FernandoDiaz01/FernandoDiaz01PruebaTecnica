@@ -3,7 +3,8 @@ import styles from './about.module.css'
 import img from './imgAbout/imgAboutMe.png'
 export default function About() {
   return (
-    <div className={styles.mainContainerAbout}>
+    
+    <div id="about" className={styles.mainContainerAbout}>
       <div className={styles.containerTitleAbout}>
        
         <Image className={styles.imgAbout} src={img} alt='fondoAbout' width={400} height={400}/>
