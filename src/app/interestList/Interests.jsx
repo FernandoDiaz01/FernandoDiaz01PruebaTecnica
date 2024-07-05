@@ -1,4 +1,3 @@
-
 import styles from './interests.module.css';
 
 const Interests = () => {
@@ -12,7 +11,6 @@ const Interests = () => {
     'Cine',
     'Cocina',
     'Deportes',
-
   ];
 
   return (
@@ -20,10 +18,9 @@ const Interests = () => {
       <h2 className={styles.titleInterest}>Intereses Personales</h2>
       <ul className={styles.listInterest}>
         {interests.map((interest) => (
-          <li key={interest} className={styles.itemInterest}>
-            <div className={styles.contentInterest}>
-
-            {interest}
+          <li key={interest} className={styles.newItemInterest}>
+            <div className={styles.newContentInterest}>
+              {interest}
             </div>
           </li>
         ))}
@@ -33,5 +30,3 @@ const Interests = () => {
 };
 
 export default Interests;
-
-

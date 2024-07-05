@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
     height: 30px;
-    background-color: rgb(124, 1, 239);
+    background-color: rgba(150, 39, 255, 0.897);
     transform-origin: 0%;
     z-index: 100;
 }

@@ -1,42 +1,50 @@
-
 .mainContainerInterest {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px;
-    padding: 14%;
-  }
-  
-  .titleInterest {
-    font-size: 40px;
-    margin-bottom: 20px;
-    padding-bottom: 5%;
-  }
-  
-  .listInterest {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    padding: 0;
-    list-style: none;
-  }
-  
-  .itemInterest {
-    color: white;
-  
-    border: 3px solid #ccc;
-    border-radius: 15%;
-    padding: 13px;
-    flex: 1 1 30%; 
-    text-align: center;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 14%;
+}
 
-.itemInterest:hover {
-    transform: rotate(5deg);
+.titleInterest {
+  font-size: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 5%;
+}
 
-   
+.listInterest {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+/* Nuevo estilo de botones */
+.newItemInterest {
+  display: inline-block;
+  color: white;
+  background: linear-gradient(45deg, rgb(91, 66, 150), rgb(56, 18, 200));
+  border: 3px solid white;
+  border-radius: 25px;
+  padding: 20px 50px; 
+  text-align: center;
+  flex: 1 1 30%;
+  transition: transform 0.3s ease;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.newItemInterest:hover {
+  transform: scale(1.05);
+  background: linear-gradient(45deg, rgb(56, 18, 200), rgb(96, 28, 255));
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.newContentInterest {
+  font-size: 18px; 
+  font-weight: bold;
 }

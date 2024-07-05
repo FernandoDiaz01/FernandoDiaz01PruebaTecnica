@@ -1,7 +1,8 @@
+/* Estilos generales */
 .mainContainerForm {
   padding: 80px;
   border-radius: 20px;
-  box-shadow:-2px -4px 120px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: -2px -4px 120px 2px rgba(0, 0, 0, 0.6);
   max-width: 800px;
   margin: 40px auto;
 }
@@ -17,7 +18,6 @@
 .containerContact {
   margin-bottom: 30px;
 }
-
 
 .containerContact label {
   display: block;
@@ -72,4 +72,60 @@
 .btnForm:hover {
   background: #218838;
   transform: scale(1.1);
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+
+@media (max-width: 768px) {
+  .mainContainerForm {
+    padding: 40px;
+    max-width: 90%;
+    margin: 20px auto;
+  }
+
+  .contactTitle {
+    font-size: 35px;
+  }
+
+  .containerContact label {
+    margin: 4% auto;
+  }
+
+  .btnForm {
+    width: 70%;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .mainContainerForm {
+    padding: 20px;
+    max-width: 100%;
+    margin: 10px auto;
+  }
+
+  .contactTitle {
+    font-size: 28px;
+  }
+
+  .containerContact input,
+  .containerContact textarea {
+    font-size: 14px;
+  }
+
+  .btnForm {
+    width: 90%;
+    font-size: 14px;
+  }
 }
