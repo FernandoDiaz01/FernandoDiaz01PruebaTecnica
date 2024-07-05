@@ -16,4 +16,4 @@ yarn dev
 Links
 Podes visualizar el proyecto en Vercel clickeando en:
 
-https://fernando-diaz01-prueba-tecnica.vercel.app
+https://fernando-diaz01-prueba-tecnica.vercel.app/

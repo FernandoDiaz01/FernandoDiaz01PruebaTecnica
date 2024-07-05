@@ -85,6 +85,10 @@
   .imgPresentation {
     width: 70%;
   }
+
+  .arrowContainer{
+    margin-top: 30%;
+  }
 }
 
 @media (max-width: 576px) {
