@@ -36,7 +36,7 @@
     line-height: 40px;
   }
   
-  /* Estilos escritorio  */
+
   @media (min-width: 993px) {
     .mainContainerAbout {
       flex-direction: row;
@@ -61,7 +61,7 @@
     }
   }
   
-  /* estilos tablet */
+ 
   @media (min-width: 577px) and (max-width: 992px) {
     .mainContainerAbout {
       flex-direction: column;
@@ -90,7 +90,7 @@
     }
   }
   
-  /* estilos mobile */
+ 
   @media (max-width: 576px) {
     .mainContainerAbout {
       flex-direction: column;

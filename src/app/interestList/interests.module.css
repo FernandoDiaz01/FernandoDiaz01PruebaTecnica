@@ -23,7 +23,6 @@
   list-style: none;
 }
 
-/* Nuevo estilo de botones */
 .newItemInterest {
   display: inline-block;
   color: white;
@@ -40,11 +39,11 @@
 
 .newItemInterest:hover {
   transform: scale(1.05);
-  background: linear-gradient(45deg, rgb(56, 18, 200), rgb(96, 28, 255));
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .newContentInterest {
   font-size: 18px; 
   font-weight: bold;
+  background: linear-gradient(45deg, rgb(91, 66, 150), rgb(56, 18, 200));
 }
